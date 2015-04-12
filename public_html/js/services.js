@@ -6,14 +6,14 @@ var ulboraCmsServices = angular.module('ulboraCmsServices', ['ngResource', 'ngCo
 
 ulboraCmsServices.factory('Content', ['$resource',
     function ($resource) {
-        return $resource("../rs/content", {}, {
+        return $resource("http://www.ulboracms.org/rs/content", {}, {
             getContent: {method: 'POST', cache: false, isArray: false}
         });
     }]);
 
 ulboraCmsServices.factory('Article', ['$resource',
     function ($resource) {
-        return $resource("../rs/content/article/:id", {}, {
+        return $resource("http://www.ulboracms.org/rs/content/article/:id", {}, {
             get: {method: 'GET', cache: false, isArray: false}
         });
     }]);

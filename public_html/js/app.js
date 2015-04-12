@@ -13,7 +13,16 @@ templateApp.config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
         $routeProvider.
                 when('/', {
-                    templateUrl: 'partials/main.html',
+                    templateUrl: 'partials/header.html',
+                    controller: 'ArticleListCtrl'
+                }).when('/portfolio', {
+                    templateUrl: 'partials/portfolio.html',
+                    controller: 'ArticleListCtrl'
+                }).when('/about', {
+                    templateUrl: 'partials/about.html',
+                    controller: 'ArticleListCtrl'
+                }).when('/contact', {
+                    templateUrl: 'partials/contact.html',
                     controller: 'ArticleListCtrl'
                 }).when('/article/:id', {
                     templateUrl: 'partials/article.html',

@@ -443,3 +443,20 @@ footer .footer-below {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+.white-buffer{
+    float: left;
+    width: 100%;
+    height: 100px;
+   
+}
+
+.white-buffer-long{
+    float: left;
+    width: 100%;
+    height: 300px;
+    background: #18bc9c;
+}
+.view-hidden{
+    display: none;
+}

@@ -1,0 +1,21 @@
+<div ng-include src="'partials/menu.html'"></div> 
+<div class="{{showView}}">
+<div class="portfolio-modal modal1"  >
+    <div class="modal-content">
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">                        
+                        <h2>{{article.title}}</h2>
+                        <hr class="star-primary">
+                        <div ng-bind-html="articleHtml"></div>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-include src="'partials/footer.html'"></div>  
+</div>
